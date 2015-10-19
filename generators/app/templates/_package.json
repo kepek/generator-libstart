@@ -25,7 +25,7 @@
     "umd": "umd <%= libname %> ./src/<%= libname %>.js ./dist/<%= libname %>.js",
     "changelog": "node ./bin/changelog.js",
     "bowerSync": "node ./bin/bowerSync.js",
-    "uglify": "uglifyjs ./src/<%= libname %>.js -o ./dist/<%= libname %>.min.js -c -m"
+    "uglify": "uglifyjs --bare-returns ./src/<%= libname %>.js -o ./dist/<%= libname %>.min.js -c -m"
   },
   "dependencies": {},
   "devDependencies": {}
